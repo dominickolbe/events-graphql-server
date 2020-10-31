@@ -4,7 +4,21 @@ import { UserModel } from "../database/model/User";
 
 export const schema = buildSchema(`
 
-  type User {
+  type User {{
+    events{
+        _id
+        name{
+          events{
+              _id
+              name
+              location
+              createdAt
+          }
+      }
+        location
+        createdAt
+    }
+}
     _id: String
     name: String
     createdAt: String
