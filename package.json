@@ -1,0 +1,32 @@
+{
+  "name": "events-graphql-server",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": "Dominic Kolbe <kolbedominic@gmail.com>",
+  "repository": "git@github.com:dominickolbe/events-graphql-server.git",
+  "scripts": {
+    "start:dev": "nodemon",
+    "start": "ts-node ./src/index.ts"
+  },
+  "dependencies": {
+    "dotenv-safe": "^8.2.0",
+    "koa": "^2.13.0",
+    "koa-router": "^9.4.0",
+    "mongoose": "^5.10.11",
+    "option-t": "^23.0.2"
+  },
+  "engines": {
+    "node": "^12.18.3",
+    "yarn": "^1.22.5"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.6",
+    "@types/koa-router": "^7.4.1",
+    "@types/mongoose": "^5.7.36",
+    "@types/node": "^14.14.6",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  }
+}
