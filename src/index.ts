@@ -4,6 +4,7 @@ import Koa from "koa";
 import koaGraphql from "koa-graphql";
 import koaMount from "koa-mount";
 import { Database } from "./database";
+import { UserModel } from "./database/model/User";
 import { resolver, schema } from "./graphql";
 
 const PORT = process.env.PORT;
